@@ -1,6 +1,6 @@
 <script lang="ts">
 import { defineComponent } from "vue";
-
+import { useTitle } from "@vueuse/core";
 export default defineComponent({
   name: "SomeComponent",
   methods: {
@@ -12,6 +12,9 @@ export default defineComponent({
         eventLabel: "Label",
       });
     },
+  },
+  created() {
+    useTitle("Test title");
   },
 });
 </script>
