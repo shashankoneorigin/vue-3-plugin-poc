@@ -5,6 +5,7 @@ export default defineComponent({
   name: "SomeComponent",
   methods: {
     trackEvent() {
+      // @ts-ignore
       this.$gtmEvent("eventName", {
         eventCategory: "Category",
         eventAction: "Action",
